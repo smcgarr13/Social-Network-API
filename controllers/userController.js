@@ -2,7 +2,7 @@ const User = require('../models/User');
 
 module.exports = {
   // Get all users
-  getUsers(req, res) {
+  getAllUsers(req, res) {
     User.find()
       .populate('thoughts')
       .populate('friends')
@@ -11,7 +11,7 @@ module.exports = {
   },
 
   // Get a single user by its _id and populated thought and friend data
-  getSingleUser(req, res) {
+  getUserById(req, res) {
     User.findOne({ _id: req.params.userId })
       .populate('thoughts')
       .populate('friends')
@@ -68,8 +68,8 @@ module.exports = {
       .catch((err) => res.status(500).json(err));
   },
 
-  // Remove a friend from a user's friend list
-  removeFriend(req, res) {
+  // Delete a friend from a user's friend list
+  deleteFriend(req, res) {
     User.findByIdAndUpdate(
       req.params.userId,
       { $pull: { friends: req.params.friendId } },

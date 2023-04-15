@@ -33,7 +33,8 @@ N/A
 Express.js;
 Mongoose;
 Node.js;
-Nodemon
+Nodemon;
+Dotenv
 
 ## License
 MIT
