@@ -10,7 +10,6 @@ const {
   deleteReaction,
 } = require('../../controllers/thoughtController');
 
-
 console.log('getAllThoughts', getAllThoughts);
 console.log('getThoughtById', getThoughtById);
 console.log('createThought', createThought);
