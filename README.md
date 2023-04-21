@@ -28,6 +28,7 @@ Clone repo: https://github.com/smcgarr13/Social-Network-API
 ## Usage
 To interact with the API, you can use a tool such as Insomnia. You can make requests to the different endpoints provided to create, retrieve, update, or delete data.
 
+## API Endpoints
 The API consists of the following endpoints:
 
 ### Users
